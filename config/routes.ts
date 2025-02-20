@@ -39,12 +39,12 @@ export default [
 		icon: 'ArrowsAltOutlined',
 	},
 	{
-		path: '/gues',
-		name: 'Gues Game',
-		component:'./B23DCCC158-TH1/Gues/Guesgame',
-		icon:'Game',
+		path: '/guess',
+		name: 'Guess Game',
+		component: './B23DCCC158-TH1/Gues/Guesgame',
+		icon: 'Game',
 	},
-
+	
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
@@ -60,26 +60,30 @@ export default [
 	// },
 
 	{
-		path: '/notification',
+		path: '/',
+		name: 'StudyTracker',
+		icon: 'HomeOutlined',
 		routes: [
 			{
-				path: './subscribe',
-				exact: true,
-				component: './ThongBao/Subscribe',
+				path: './QuanLyMonHoc',
+				name: 'QuanLyMonHoc',
+				component: './B23DCCC158-TH1/StudyTracker/QuanLyMonHoc',
+				icon: 'HomeOutlined',
 			},
 			{
-				path: './check',
-				exact: true,
-				component: './ThongBao/Check',
+				path: './QuanLyTienDo',
+				name: 'QuanLyTienDo',
+				component: './B23DCCC158-TH1/StudyTracker/QuanLyTienDo',
+				icon: 'HomeOutlined',
 			},
 			{
-				path: './',
-				exact: true,
-				component: './ThongBao/NotifOneSignal',
+				path: './ThietLapMucTieu',
+				name: 'ThietLapMucTieu',
+				component: './B23DCCC158-TH1/StudyTracker/ThietLapMucTieu',
+				icon: 'HomeOutlined',
 			},
 		],
-		layout: false,
-		hideInMenu: true,
+
 	},
 	{
 		path: '/',
