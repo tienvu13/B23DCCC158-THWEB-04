@@ -1,4 +1,6 @@
-﻿export default [
+﻿import component from "@/locales/en-US/component";
+
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -35,6 +37,12 @@
 		name: 'RandomUser',
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
+	},
+	{
+		path: '/gues',
+		name: 'Gues Game',
+		component:'./B23DCCC158-TH1/Gues/Guesgame',
+		icon:'Game',
 	},
 
 	// DANH MUC HE THONG
