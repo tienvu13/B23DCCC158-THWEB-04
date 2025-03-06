@@ -1,4 +1,5 @@
 ﻿import component from "@/locales/en-US/component";
+import path from "path";
 
 export default [
 	{
@@ -43,6 +44,33 @@ export default [
 		name: 'Guess Game',
 		component: './B23DCCC158-TH1/Gues/Guesgame',
 		icon: 'Game',
+	},
+	{
+		path: '/OTT',
+		name:'OanTuTy',
+		component:'./B23DCCC158-TH2/Bai1/GameOTT',
+		icon: 'GameConsole'
+	},
+	{
+		
+		name: 'Quản lý đề thi',
+		routes: [
+					{
+						name: 'Quản lý môn học',
+						path: 'mon-hoc',
+						component: './B23DCCC158-TH2/Exam/Subjects',
+					},
+					{
+						name: 'Quản lý câu hỏi',
+						path: 'quan-ly-cau-hoi',
+						component: './B23DCCC158-TH2/Exam/Questions',
+					},{
+						name: 'Quản lý đề thi',
+						path: 'muc-tieu-mon-hoc',
+						component: './B23DCCC158-TH2/Exam/Exam',
+					},
+				],
+		icon: 'MenuUnfoldOutlined',
 	},
 	
 	// DANH MUC HE THONG
